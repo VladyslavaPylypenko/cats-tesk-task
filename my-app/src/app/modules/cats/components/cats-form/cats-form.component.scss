@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+  padding-top: 24px;
+  align-items: center;
+  mat-select {
+    border-radius: 10px;
+    border: 1px solid #D6C9EE;
+    background: #F4F4F4;
+    display: flex;
+    height: 45px;
+    ::ng-deep .mat-mdc-select-trigger {
+      padding: 0 8px !important;
+    }
+  }
+  .bread-select {
+    width: 200px;
+  }
+  .count-select {
+    width: 80px;
+  }
+}

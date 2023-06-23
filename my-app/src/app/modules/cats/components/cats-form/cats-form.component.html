@@ -1,0 +1,9 @@
+<form [formGroup]="catsForm">
+  <mat-select class="bread-select" formControlName="selectedBreed">
+    <mat-option [value]="''">All cats</mat-option>
+    <mat-option *ngFor="let breed of breedList" [value]="breed?.id">{{breed?.name}}</mat-option>
+  </mat-select>
+  <mat-select class="count-select" formControlName="selectedCount">
+    <mat-option *ngFor="let count of countOptions" [value]="count">{{count}}</mat-option>
+  </mat-select>
+</form>

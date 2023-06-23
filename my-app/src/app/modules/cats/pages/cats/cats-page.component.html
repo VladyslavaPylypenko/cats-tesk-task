@@ -1,0 +1,8 @@
+<app-cats-form [catsForm]="catsForm" [breedList]="breedList"></app-cats-form>
+
+<app-cats *ngIf="!isLoading" [catList]="catList"></app-cats>
+
+<app-loader *ngIf="isLoading"></app-loader>
+
+
+
